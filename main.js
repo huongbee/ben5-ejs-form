@@ -12,5 +12,5 @@ app.use('/', SingerController); //
 app.use('/user', UserController); // /user prefix  user/login , user/sign-up
 app.use('/', ErrorController); //
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Server listening on port ' + port));
